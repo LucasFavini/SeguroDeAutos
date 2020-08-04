@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>VainilaJs</title>
+</head>
+<body>
+    <header><h2>Seguro de Autos</h2></header>
+    <form action="" id="formulario" class="form-control">
+
+        <div class="container">     
+            <div id="contenedor">       
+            <p>Auto</p>
+            <select name="autos" id="autos" class="form-control">seleccion            
+            </select><br><br>  
+            <p>Año</p>
+            <select name="lista" id="lista" class="form-control">seleccion            
+            </select><br><br>
+
+            <div>
+                <p>Tipo de seguro</p>
+
+                <input type="radio" value="basico" name="tipo" checked> Basico <br>
+                <input type="radio" value="completo" name="tipo"> Completo
+            </div>
+                 <br>
+                 <img src="https://miro.medium.com/max/600/1*beQRWt1uWdnQM_nqCwhJnA.gif" id="spinner">
+
+                 <div id="resultado" class="form-control">   
+                                   
+                 </div>
+                <button id="boton" class="btn btn-alert">Calcular</button>
+        </div>
+     </div>  
+    </form>    
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+    body{font-family: 'roboto';}
+
+    #spinner{
+    position: absolute;
+    width: 15%;
+    margin-top: -25%;
+    margin-left: 35%;
+    display: none;
+    }
+    #resultado{
+        display: none;
+        position: absolute;
+        margin-top: -25%;
+        margin-left: 35%;
+        border: 2px solid;
+        padding: 2%;
+        width: 25%;
+    }
+
+    .container select{
+        width: 20%;
+        text-align: center;
+    }
+
+    .container
+    {
+        padding: 2%;
+      
+    }
+
+    h2{text-align: center;}
+
+</style>    
+<script src="js/app.js"></script>   
+  
+</body>
+</html>
